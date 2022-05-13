@@ -1,0 +1,15 @@
+---
+version: '3.5'
+
+x-function: &function
+  platform: linux/amd64 
+
+services:
+  zookeeper:
+    <<: *function
+    
+  broker:
+    <<: *function
+
+  schema-registry:
+    <<: *function
